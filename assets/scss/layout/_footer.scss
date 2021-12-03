@@ -1,0 +1,43 @@
+.footer {
+  &__weiget {
+    &Title {
+      font-size: 16px;
+      font-weight: 700;
+      color: $pragrapColor;
+    }
+    ul.list {
+      padding-top: 10px;
+      li a {
+        display: block;
+        font-weight: 400;
+        font-size: 15px;
+        color: $pragrapColor;
+        padding-bottom: 5px;
+      }
+      &.socail {
+        @include flex;
+        column-gap: 20px;
+      }
+    }
+  }
+  &__copyWrite {
+    @include flex;
+    column-gap: 30px;
+    padding-top: 40px;
+    p {
+      color: $pragrapColor;
+      font-size: 14px;
+    }
+    a {
+      color: $pragrapColor;
+      font-size: 14px;
+    }
+  }
+}
+@media screen and (max-width: 991px) {
+  .footer__copyWrite {
+    flex-direction: column;
+    row-gap: 10px;
+    align-items: flex-start;
+  }
+}

@@ -1,0 +1,11 @@
+@mixin flex {
+  display: flex;
+  align-items: center;
+}
+@mixin boldText {
+  color: $titleColor;
+  font-weight: 700;
+}
+@mixin transition {
+  transition: 0.4s all ease-in;
+}

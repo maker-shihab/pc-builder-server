@@ -1,0 +1,165 @@
+// HERO AREA
+.hero {
+  &Slider {
+    &__item {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 25px;
+      align-items: center;
+    }
+    &__illustation {
+      position: relative;
+      img {
+        height: 400px;
+        width: auto;
+        position: relative;
+        z-index: 99;
+        transform: translateX(20px);
+      }
+      .bgShap {
+        position: absolute;
+        bottom: 0;
+        left: -36px;
+      }
+    }
+    &__text {
+      .buttonss {
+        padding-top: 20px;
+        @include flex;
+        justify-content: space-between;
+        column-gap: 20px;
+      }
+    }
+  }
+}
+// BOOK CONTENT
+.book {
+  &Content {
+    h2.title {
+      color: $titleColor;
+      font-size: 30px;
+      text-align: center;
+      line-height: 1.4;
+    }
+    &__select {
+      @include flex;
+      justify-content: center;
+      padding: 30px;
+      column-gap: 20px;
+      p {
+        color: $pragrapColor;
+        font-size: 15px;
+        font-weight: 700;
+      }
+      .list {
+        @include flex;
+        column-gap: 15px;
+        li a {
+          display: inline-block;
+          padding: 8px 15px;
+          @include boldText;
+          font-size: 15px;
+          border: 1px solid $titleColor;
+          border-radius: 25px;
+        }
+      }
+    }
+    // GRID ITEM
+    &__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      column-gap: 20px;
+      row-gap: 20px;
+      .single {
+        box-shadow: 0 2px 15px #e8e8e8;
+        transition: 0.4s all ease-in;
+        .thumb {
+          overflow: hidden;
+          img {
+            transition: 0.3s all ease-in-out;
+          }
+        }
+        .text {
+          transition: 0.4s all ease-in;
+          padding: 20px 15px;
+          .title {
+            @include boldText;
+            font-size: 15px;
+            line-height: 1.4;
+            @include transition;
+          }
+          .price {
+            @include flex;
+            justify-content: space-between;
+            padding-top: 20px;
+            &__text {
+              p {
+                font-size: 14px;
+                color: $pragrapColor;
+                @include transition;
+              }
+              span {
+                font-size: 14px;
+                font-weight: 700;
+                color: #fff;
+                padding: 5px 10px;
+                border-radius: 25px;
+                background: $titleColor;
+                line-height: 1.2;
+                margin-top: 3px;
+                display: block;
+              }
+            }
+            &_main {
+              span {
+                display: block;
+                &.sub {
+                  color: $darkRed;
+                  font-weight: 700;
+                  line-height: 1.2;
+                  @include transition;
+                  font-size: 16px;
+                }
+                &.total {
+                  @include transition;
+                  font-size: 24px;
+                  color: $darkRed;
+                  font-weight: 700;
+                  line-height: 1.2;
+                }
+              }
+            }
+          }
+        }
+        &:hover {
+          .thumb {
+            img {
+              transform: scale(1.1);
+            }
+          }
+          .text {
+            background: $darkRed;
+            .title {
+              color: #fff;
+            }
+          }
+          .price {
+            &__text {
+              p {
+                color: #fff;
+              }
+            }
+          }
+          .price_main {
+            span.sub {
+              color: #fff;
+            }
+            span.total {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
