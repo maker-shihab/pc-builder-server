@@ -518,6 +518,11 @@ header.active .headerContent .logo_link img {
   .headerArea {
     position: relative;
   }
+  .headerArea .primaryMenu.active nav ul {
+    left: 0%;
+    background: #fff;
+    z-index: 9999;
+  }
   .mobileMenu {
     display: -webkit-box !important;
     display: -ms-flexbox !important;
@@ -530,6 +535,10 @@ header.active .headerContent .logo_link img {
         -ms-flex-direction: column;
             flex-direction: column;
     padding: 50px;
+    width: 100%;
+    left: -200%;
+    right: 0;
+    top: 99%;
     -webkit-box-align: inherit !important;
         -ms-flex-align: inherit !important;
             align-items: inherit !important;
@@ -546,6 +555,10 @@ header.active .headerContent .logo_link img {
   width: 35px;
   row-gap: 5px;
   cursor: pointer;
+  margin-left: 30px;
+  margin-top: 13px;
+  position: relative;
+  z-index: 9999999;
 }
 
 .mobileMenu span {

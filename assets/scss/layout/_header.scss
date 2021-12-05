@@ -85,9 +85,19 @@ header {
 .mobileMenu {
   display: none;
 }
+
 @media (max-width: 991.98px) {
   .headerArea {
     position: relative;
+    .primaryMenu.active {
+      nav {
+        ul {
+          left: 0%;
+          background: #fff;
+          z-index: 9999;
+        }
+      }
+    }
   }
   .mobileMenu {
     display: flex !important;
@@ -96,7 +106,11 @@ header {
     ul {
       position: absolute;
       flex-direction: column;
-      padding: 50px;
+      padding: px;
+      width: 100%;
+      left: -200%;
+      right: 0;
+      top: 99%;
       align-items: inherit !important;
     }
   }
@@ -109,6 +123,10 @@ header {
   width: 35px;
   row-gap: 5px;
   cursor: pointer;
+  margin-left: 30px;
+  margin-top: 13px;
+  position: relative;
+  z-index: 9999999;
 }
 
 .mobileMenu span {
