@@ -1,0 +1,236 @@
+.breadcrum {
+  &.light {
+    .breadcrum_list {
+      li {
+        color: $titleColor;
+        a {
+          color: #cbcbcb;
+        }
+      }
+    }
+  }
+  &_list {
+    @include flex;
+    column-gap: 40px;
+    padding: 30px 0;
+    li {
+      color: #fff;
+      position: relative;
+      &::before {
+        position: absolute;
+        left: -25px;
+        top: 4px;
+        display: inline-block;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f054";
+        font-size: 12px;
+        color: $darkRed;
+      }
+      &:first-child::before {
+        content: "";
+      }
+      a {
+        color: #2c5e91;
+        @include transition;
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+.singlePg {
+  &__header {
+    &:hover .singleHero__curd {
+      border-radius: 15px;
+    }
+    &:hover {
+      .singlePgarrow {
+        img {
+          &.left {
+            right: -50px;
+            top: 60px;
+            height: 150px;
+          }
+          &.right {
+            right: 450px;
+            top: 320px;
+            height: 250px;
+          }
+        }
+      }
+    }
+    background: $titleColor;
+    position: relative;
+    .singlePgarrow {
+      img {
+        transition: 0.3s all ease-in;
+        position: absolute;
+        height: 220px;
+        width: auto;
+        z-index: 1;
+        &.left {
+          right: 70px;
+          top: 85px;
+          height: 105px;
+        }
+        &.right {
+          right: 410px;
+          top: 280px;
+          height: 220px;
+        }
+      }
+    }
+  }
+  .singleHero {
+    padding-top: 50px;
+    &__text {
+      width: 60%;
+      padding-bottom: 120px;
+      h3.title {
+        color: $darkRed;
+        padding-bottom: 10px;
+      }
+      p.pragrap {
+        color: #fff;
+        font-weight: 400;
+      }
+      ul.list {
+        padding-top: 30px;
+        li {
+          @include flex;
+          column-gap: 10px;
+          font-size: 14px;
+          color: #fff;
+          padding-bottom: 10px;
+          img {
+            height: 15px;
+            width: auto;
+          }
+        }
+      }
+    }
+  }
+  &__content {
+    padding: 60px 0 120px 0;
+    position: relative;
+    z-index: 33;
+    background: #fff;
+    .tabelItem {
+      width: 60%;
+      h3.title {
+        color: $darkRed;
+        font-size: 20px;
+      }
+      table {
+        tr {
+          td {
+            padding-bottom: 10px;
+          }
+          .tableHead {
+            font-weight: 700;
+            color: $titleColor;
+            font-size: 16px;
+            width: 180px;
+          }
+          .tableSub_title {
+            color: $pragrapColor;
+            font-size: 14px;
+            padding-left: 10px;
+          }
+        }
+      }
+      &.maxTable {
+        padding-top: 40px;
+        .second {
+          p.pragrap {
+            color: $pragrapColor;
+            padding-top: 10px;
+            font-size: 16px;
+          }
+          .singleDp {
+            &__item {
+              .title {
+                font-size: 16px;
+                color: $titleColor;
+                line-height: 1.4;
+                padding-top: 20px;
+              }
+              p.pragrap {
+                padding-top: 5px;
+              }
+            }
+          }
+        }
+      }
+      .singleList {
+        padding-top: 50px;
+        ul {
+          padding-top: 10px;
+          li {
+            padding-bottom: 5px;
+            color: $pragrapColor;
+          }
+        }
+      }
+      .singleFaq {
+        padding-top: 50px;
+        &__item {
+          &.active .faq_content p {
+            height: 60px;
+            overflow: inherit;
+            opacity: 1;
+            visibility: visible;
+          }
+          &.active .faq_header i {
+            transform: rotate(90deg);
+            color: $darkRed;
+          }
+          padding-bottom: 10px;
+          .faq_header {
+            @include flex;
+            column-gap: 10px;
+            cursor: pointer;
+            &.active h3 {
+              color: $darkRed;
+            }
+            h3 {
+              color: $titleColor;
+              line-height: 24px;
+              font-size: 16px;
+              i {
+                @include transition;
+              }
+            }
+          }
+          .faq_content {
+            padding-left: 20px;
+            p {
+              color: $pragrapColor;
+              font-size: 14px;
+              height: 0px;
+              overflow: hidden;
+              @include transition;
+              opacity: 0;
+              visibility: hidden;
+            }
+          }
+        }
+      }
+      .singleCopy {
+        padding-top: 30px;
+        text-align: right;
+        p {
+          font-weight: 500;
+          a {
+            color: $darkRed;
+            &:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+}

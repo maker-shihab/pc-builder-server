@@ -109,170 +109,229 @@
       </div>
     </header>
     <!-- HEADER AREA -->
-    <section class="login sectionPaddin">
+    <section class="hero">
       <div class="container">
-        <div class="login__content">
-          <div class="header">
-            <h2 class="title">Grozs</h2>
+        <!-- BREADCRUM -->
+        <div class="breadcrum light">
+          <ul class="breadcrum_list">
+            <li>Sākums</li>
+            <li>
+              <a href="#">Kategorijas</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- BOOK CONTENT -->
+    <section class="book sectionPaddin">
+      <div class="container">
+        <div class="bookContent">
+          <h2 class="title">Visas kategorijas</h2>
+          <div class="bookContent__select">
+            <p>Visas kategorijas</p>
+            <ul class="list">
+              <li><a href="#">Sporta fizioloģija</a></li>
+              <li><a href="#">Anatomija</a></li>
+              <li><a href="#">Sporta medicīna</a></li>
+              <li><a href="#">Sporta psiholoģija</a></li>
+              <li><a href="#">Fitness, Veselības sports</a></li>
+            </ul>
           </div>
-          <div class="login_main">
-            <div class="box">
-              <!-- BOX CONTENT -->
-              <div class="boxContent contactPageBox">
-                <div class="contactPg">
-                  <ul class="menu">
-                    <li><a href="#">Cena</a></li>
-                    <li><a href="#">Daudzums</a></li>
-                    <li><a href="#">Summa</a></li>
-                  </ul>
-                  <div class="profile">
-                    <div class="profile_title">
-                      <a href="#">
-                        <img
-                          src="assets/image/profile/squedProfile.png"
-                          alt="profile"
-                        />
-                        Kursa nosaukums
-                      </a>
-                      <div class="content">
-                        <span>€ 997.02</span>
-                        <span>1</span>
-                        <span>€ 997.02</span>
-                      </div>
-                    </div>
+          <div class="bookContent__grid">
+            <!-- GRID SINGLE ITEM -->
+            <div class="single">
+              <div class="thumb">
+                <img src="assets/image/homeItem/1.jpg" alt="item" />
+              </div>
+              <div class="text">
+                <h3 class="title">
+                  Ievads anatomijā. Anatomiskās plaknes, cilvēka skelets un
+                  kaulu savienojumi
+                </h3>
+                <div class="price">
+                  <div class="price__text">
+                    <p>1 h 25 min</p>
+                    <span>Svens Vilks</span>
                   </div>
-                  <div class="checkCond">
-                    <div class="row">
-                      <div class="col-lg-5 col-md-6">
-                        <div class="checkArea">
-                          <form action="#">
-                            <div class="single">
-                              <input type="text" name="check" />
-                              <label for="#">Vārds</label>
-                            </div>
-                            <div class="single">
-                              <input type="text" name="check" />
-                              <label for="#">Vārds</label>
-                            </div>
-                            <div class="single">
-                              <input type="text" name="check" />
-                              <label for="#">Vārds</label>
-                            </div>
-                            <div class="single">
-                              <input type="text" name="check" />
-                              <label for="#" class="pro">
-                                <span>Tālrunis</span>
-                                <span>Obligāti jāaizpilda</span>
-                              </label>
-                            </div>
-                            <div class="single">
-                              <input type="text" name="check" />
-                              <label for="#">Vārds</label>
-                            </div>
-                            <div class="single">
-                              <input type="text" name="check" />
-                              <label for="#">Vārds</label>
-                            </div>
-                            <div class="Radio">
-                              <p>Mācību forma</p>
-                              <div class="radioSingle">
-                                <label for="sRadio">
-                                  <input
-                                    type="radio"
-                                    name="sRadio"
-                                    id="sRadio"
-                                  />
-                                  <span class="radinMark">
-                                    Tiešsaistē (On-line)
-                                  </span>
-                                </label>
-                                <label for="sRadio1">
-                                  <input
-                                    type="radio"
-                                    name="sRadio1"
-                                    id="sRadio1"
-                                  />
-                                  <span class="radinMark">
-                                    Tiešsaistē (On-line)
-                                  </span>
-                                </label>
-                              </div>
-                            </div>
-                            <div class="single singleSelect">
-                              <select name="siSelect" id="siSelect">
-                                <option value="Basketbols">Basketbols</option>
-                                <option value="Basketbols">Basketbols</option>
-                                <option value="Basketbols">Basketbols</option>
-                                <option value="Basketbols">Basketbols</option>
-                                <option value="Basketbols">Basketbols</option>
-                              </select>
-                            </div>
-                            <div class="single">
-                              <input
-                                type="text"
-                                name="check"
-                                placeholder="Augšupielādēt failu"
-                                id="check"
-                              />
-                              <label for="#">Vārds</label>
-                            </div>
-                            <div class="single">
-                              <input
-                                type="text"
-                                name="check"
-                                placeholder="Augšupielādēt failu"
-                                id="check"
-                              />
-                              <label for="#">Vārds</label>
-                            </div>
-                          </form>
-                        </div>
-                      </div>
-                      <div class="offset-lg-2 col-lg-5 col-md-6">
-                        <div class="cond">
-                          <p class="title">Atlaide</p>
-                          <div class="header">
-                            <h3 class="title">Kopsumma</h3>
-                            <h3 class="title">€ 997.02</h3>
-                          </div>
-                          <div class="cond__check">
-                            <div class="single">
-                              <label for="sCheck">
-                                <input
-                                  type="checkbox"
-                                  name="sCheck"
-                                  id="sCheck"
-                                />
-                                <span
-                                  >I agree to the
-                                  <a href="#">Terms & Conditions</a></span
-                                >
-                              </label>
-                            </div>
-                            <div class="single">
-                              <label for="sCheck1">
-                                <input
-                                  type="checkbox"
-                                  name="sCheck"
-                                  id="sCheck1"
-                                />
-                                <span
-                                  >I agree to the
-                                  <a href="#">Privacy Policy</a></span
-                                >
-                              </label>
-                            </div>
-                            <div class="btn">
-                              <a href="#" class="primaryBtn">PIRKT</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                  <div class="price_main">
+                    <span class="sub"><del>€15.00</del></span>
+                    <span class="total">€7.50</span>
                   </div>
                 </div>
               </div>
             </div>
+            <!-- GRID SINGLE ITEM -->
+            <div class="single">
+              <div class="thumb">
+                <img src="assets/image/homeItem/2.jpg" alt="item" />
+              </div>
+              <div class="text">
+                <h3 class="title">
+                  Ievads anatomijā. Anatomiskās plaknes, cilvēka skelets un
+                  kaulu savienojumi
+                </h3>
+                <div class="price">
+                  <div class="price__text">
+                    <p>1 h 25 min</p>
+                    <span>Svens Vilks</span>
+                  </div>
+                  <div class="price_main">
+                    <span class="sub"><del>€15.00</del></span>
+                    <span class="total">€7.50</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- GRID SINGLE ITEM -->
+            <div class="single">
+              <div class="thumb">
+                <img src="assets/image/homeItem/3.jpg" alt="item" />
+              </div>
+              <div class="text">
+                <h3 class="title">
+                  Ievads anatomijā. Anatomiskās plaknes, cilvēka skelets un
+                  kaulu savienojumi
+                </h3>
+                <div class="price">
+                  <div class="price__text">
+                    <p>1 h 25 min</p>
+                    <span>Svens Vilks</span>
+                  </div>
+                  <div class="price_main">
+                    <span class="sub"><del>€15.00</del></span>
+                    <span class="total">€7.50</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- GRID SINGLE ITEM -->
+            <div class="single">
+              <div class="thumb">
+                <img src="assets/image/homeItem/4.jpg" alt="item" />
+              </div>
+              <div class="text">
+                <h3 class="title">
+                  Ievads anatomijā. Anatomiskās plaknes, cilvēka skelets un
+                  kaulu savienojumi
+                </h3>
+                <div class="price">
+                  <div class="price__text">
+                    <p>1 h 25 min</p>
+                    <span>Svens Vilks</span>
+                  </div>
+                  <div class="price_main">
+                    <span class="sub"><del>€15.00</del></span>
+                    <span class="total">€7.50</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- GRID SINGLE ITEM -->
+            <div class="single">
+              <div class="thumb">
+                <img src="assets/image/homeItem/4.jpg" alt="item" />
+              </div>
+              <div class="text">
+                <h3 class="title">
+                  Ievads anatomijā. Anatomiskās plaknes, cilvēka skelets un
+                  kaulu savienojumi
+                </h3>
+                <div class="price">
+                  <div class="price__text">
+                    <p>1 h 25 min</p>
+                    <span>Svens Vilks</span>
+                  </div>
+                  <div class="price_main">
+                    <span class="sub"><del>€15.00</del></span>
+                    <span class="total">€7.50</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- GRID SINGLE ITEM -->
+            <div class="single">
+              <div class="thumb">
+                <img src="assets/image/homeItem/3.jpg" alt="item" />
+              </div>
+              <div class="text">
+                <h3 class="title">
+                  Ievads anatomijā. Anatomiskās plaknes, cilvēka skelets un
+                  kaulu savienojumi
+                </h3>
+                <div class="price">
+                  <div class="price__text">
+                    <p>1 h 25 min</p>
+                    <span>Svens Vilks</span>
+                  </div>
+                  <div class="price_main">
+                    <span class="sub"><del>€15.00</del></span>
+                    <span class="total">€7.50</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- GRID SINGLE ITEM -->
+            <div class="single">
+              <div class="thumb">
+                <img src="assets/image/homeItem/2.jpg" alt="item" />
+              </div>
+              <div class="text">
+                <h3 class="title">
+                  Ievads anatomijā. Anatomiskās plaknes, cilvēka skelets un
+                  kaulu savienojumi
+                </h3>
+                <div class="price">
+                  <div class="price__text">
+                    <p>1 h 25 min</p>
+                    <span>Svens Vilks</span>
+                  </div>
+                  <div class="price_main">
+                    <span class="sub"><del>€15.00</del></span>
+                    <span class="total">€7.50</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- GRID SINGLE ITEM -->
+            <div class="single">
+              <div class="thumb">
+                <img src="assets/image/homeItem/1.jpg" alt="item" />
+              </div>
+              <div class="text">
+                <h3 class="title">
+                  Ievads anatomijā. Anatomiskās plaknes, cilvēka skelets un
+                  kaulu savienojumi
+                </h3>
+                <div class="price">
+                  <div class="price__text">
+                    <p>1 h 25 min</p>
+                    <span>Svens Vilks</span>
+                  </div>
+                  <div class="price_main">
+                    <span class="sub"><del>€15.00</del></span>
+                    <span class="total">€7.50</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="pagination">
+            <ul class="paginationItems">
+              <li>
+                <a href="#" class="pagination_item piL">
+                  <i class="fas fa-angle-left"></i>
+                </a>
+              </li>
+              <li><a href="#" class="pagination_item">1</a></li>
+              <li><a href="#" class="pagination_item active">2</a></li>
+              <li><a href="#" class="pagination_item">3</a></li>
+              <li><a href="#" class="pagination_item">4</a></li>
+              <li>
+                <a href="#" class="pagination_item piR">
+                  <i class="fas fa-angle-right"></i>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

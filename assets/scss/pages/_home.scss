@@ -1,5 +1,6 @@
 // HERO AREA
 .hero {
+  padding: 60px 0;
   &Slider {
     &__item {
       display: grid;
@@ -13,16 +14,65 @@
         height: 400px;
         width: auto;
         position: relative;
-        z-index: 99;
-        transform: translateX(20px);
+        transform: translate(100px, 70px);
       }
       .bgShap {
-        position: absolute;
-        bottom: 0;
-        left: -36px;
+        position: relative;
+        height: 450px;
+        width: 450px;
+        &:hover {
+          .bgShap__item img {
+            height: 650px;
+            transform: translate(77px, 20px);
+          }
+        }
+        &__item {
+          position: absolute;
+          bottom: 0;
+          z-index: 100;
+          img {
+            height: 600px;
+            width: auto;
+            transform: translate(90px, 20px);
+            @include transition;
+          }
+        }
+        // ARROW HERE
+        .singlePgarrow {
+          z-index: 99;
+          img {
+            position: absolute;
+            z-index: 99;
+            &.right {
+              height: 200px;
+              right: 91px;
+              top: -102px;
+            }
+            &.left {
+              height: 140px;
+              top: 90px;
+              left: 50px;
+            }
+          }
+        }
+        .sliderSape {
+          img {
+            height: 120px;
+            margin-top: -100px;
+          }
+        }
       }
     }
     &__text {
+      .heroTitle {
+        font-size: 40px;
+        @include boldText;
+      }
+      p.pragrap {
+        color: $pragrapColor;
+        font-size: 16px;
+        max-width: 70%;
+      }
       .buttonss {
         padding-top: 20px;
         @include flex;
@@ -161,5 +211,89 @@
         }
       }
     }
+    .singleItemBtn {
+      padding: 60px 0 40px 0;
+      text-align: center;
+    }
+  }
+}
+// ATM CONTENT
+.atmArea {
+  background: #f5f5f5;
+}
+.atm {
+  padding: 60px 0;
+  &__title {
+    @include boldText;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 30px;
+  }
+  &__single {
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 10px;
+    padding: 20px;
+    .profile {
+      @include flex;
+      column-gap: 10px;
+      img {
+        height: 90px;
+        width: 90px;
+      }
+      .text {
+        a {
+          @include boldText;
+          &:hover {
+            color: $darkRed;
+          }
+        }
+        p.pragrap {
+          font-size: 14px;
+          color: $darkRed;
+          font-weight: 700;
+        }
+      }
+    }
+    &Content {
+      padding-top: 30px;
+      font-size: 14px;
+      color: $pragrapColor;
+    }
+  }
+}
+// HOME SINGLE PAGE
+.home_singlePg {
+  background: #032950;
+  padding: 0 10%;
+  padding-top: 60px;
+  padding-bottom: 80px;
+  &__title {
+    text-align: center;
+    padding-bottom: 30px;
+    h3 {
+      color: #fff;
+    }
+  }
+  .singleHero__curd {
+    width: 310px;
+    right: 40px;
+  }
+  .singleHero__text {
+    padding: 0 40px;
+  }
+  .singlePg__content {
+    padding: 40px;
+  }
+  .singlePg__header {
+    border-radius: 15px 15px 0 0;
+  }
+  .singlePg__content {
+    border-radius: 0 0 15px 15px;
   }
 }

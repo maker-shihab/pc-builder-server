@@ -21,6 +21,8 @@
 @import "components/navigation";
 
 // Page-specific stylesheets
+@import "pages/global";
 @import "pages/home";
 @import "pages/contact";
 @import "pages/login";
+@import "pages/single";

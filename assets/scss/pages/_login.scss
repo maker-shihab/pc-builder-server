@@ -87,13 +87,10 @@
             }
           }
           .buttons {
-            display: flex;
+            @include flex;
             padding-top: 20px;
             justify-content: center;
-            button [type="submit"] {
-              outline: none;
-              border: none;
-            }
+            column-gap: 20px;
           }
         }
       }

@@ -57,6 +57,11 @@ body {
   color: #111f41;
   font-size: 16px;
   line-height: 1.4;
+  overflow-x: hidden;
+}
+button {
+  border: none;
+  outline: none;
 }
 table td,
 table td * {
